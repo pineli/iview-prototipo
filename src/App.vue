@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <p-header>
-      <img slot="logo" src="./assets/logo.jpg" alt="iview" />
-
+      <img slot="logo" src="./assets/vue.png" alt="iview" />
       <div class="layout-nav">
-        <Menu mode="horizontal" :theme="theme1" active-name="1">
+        <Menu mode="horizontal" active-name="1">
             <MenuItem name="1">
                 <Icon type="ios-paper" />
                 Menu1
@@ -49,17 +48,17 @@
       >
         <CarouselItem>
           <div class="demo-carousel">
-            <img slot="logo" src="./assets/b1.jpeg" alt="iview" />
+            <img slot="logo" src="./assets/praia1.jpg" alt="iview" />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div class="demo-carousel">
-            <img slot="logo" src="./assets/b2.jpeg" alt="iview" />
+            <img slot="logo" src="./assets/praia2.jpg" alt="iview" />
           </div>
         </CarouselItem>
         <CarouselItem>
           <div class="demo-carousel">
-            <img slot="logo" src="./assets/b3.jpeg" alt="iview" />
+            <img slot="logo" src="./assets/praia3.jpeg" alt="iview" />
           </div>
         </CarouselItem>
       </Carousel>
@@ -73,10 +72,64 @@
           </Card>
           <Card>
 
+            123
+
+
+            <div>
+        <RadioGroup v-model="buttonSize" type="button">
+            <Radio label="large">Large</Radio>
+            <Radio label="default">Default</Radio>
+            <Radio label="small">small</Radio>
+        </RadioGroup>
+        <br><br>
+        <Button :size="buttonSize" type="primary">Primary</Button>
+        <Button :size="buttonSize" type="default">Default</Button>
+        <Button :size="buttonSize" type="dashed">Dashed</Button>
+        <Button :size="buttonSize" type="text">Text</Button>
+        <br><br>
+        <Button :size="buttonSize" icon="ios-download-outline" type="primary" shape="circle"></Button>
+        <Button :size="buttonSize" icon="ios-download-outline" type="primary">Download</Button>
+        <br><br>
+        <ButtonGroup :size="buttonSize">
+            <Button :size="buttonSize" type="primary">
+                <Icon type="ios-arrow-back" />
+                Backward
+            </Button>
+            <Button :size="buttonSize" type="primary">
+                Forward
+                <Icon type="ios-arrow-forward" />
+            </Button>
+        </ButtonGroup>
+    </div>
+<br>
+   <i-switch size="small">
+        <span slot="open">o</span>
+        <span slot="close">c</span>
+    </i-switch>
+    <i-switch>
+        <Icon type="md-checkmark" slot="open"></Icon>
+        <Icon type="md-close" slot="close"></Icon>
+    </i-switch>
+    <i-switch>
+        <Icon type="md-checkmark" slot="open"></Icon>
+        <Icon type="md-close" slot="close"></Icon>
+    </i-switch>
+    <i-switch>
+        <Icon type="md-checkmark" slot="open"></Icon>
+        <Icon type="md-close" slot="close"></Icon>
+    </i-switch>
+    <i-switch>
+        <Icon type="md-checkmark" slot="open"></Icon>
+        <Icon type="md-close" slot="close"></Icon>
+    </i-switch>
+
+<br>
+teste
+
+<i-button :size="buttonSize" type="primary">Primary</i-button>
+
           </Card>
-            <Switch size="large" />1</Switch>
-            <Switch /></Switch>
-            <Switch size="small" /></Switch>          
+        
         </div>
       </Card>
     </div>

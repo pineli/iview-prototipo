@@ -1,30 +1,40 @@
 <template>
   <div id="app">
     <p-header>
-      <img slot="logo" src="./assets/logo.png" alt="iview" />
-      <menu
-        breakpoint="md"
-        collapsible
-        :collapsed-width="78"
-        mode="horizontal"
-        theme="light"
-        active-name="1"
-      >
-        <div class="layout-nav">
-          <menuitem name="1">Eventos</menuitem>
-          <menuitem name="2">News</menuitem>
-          <Submenu name="3">
-            <template slot="title">
-              Sub-menu
-            </template>
-            <MenuGroup title="title">
-              <menuitem name="3-1">opcao 1</menuitem>
-              <menuitem name="3-2">opcao 2</menuitem>
-              <menuitem name="3-3">opcao 3</menuitem>
-            </MenuGroup>
-          </Submenu>
-        </div>
-      </menu>
+      <img slot="logo" src="./assets/logo.jpg" alt="iview" />
+
+      <div class="layout-nav">
+        <Menu mode="horizontal" :theme="theme1" active-name="1">
+            <MenuItem name="1">
+                <Icon type="ios-paper" />
+                Menu1
+            </MenuItem>
+            <MenuItem name="2">
+                <Icon type="ios-people" />
+                Menu2
+            </MenuItem>
+            <Submenu name="3">
+                <template slot="title">
+                    <Icon type="ios-stats" />
+                    menu2 sub1
+                </template>
+                <MenuGroup title="titulo1">
+                    <MenuItem name="3-1">menu2 sub2</MenuItem>
+                    <MenuItem name="3-2">menu2 sub3</MenuItem>
+                    <MenuItem name="3-3">menu2 sub4</MenuItem>
+                </MenuGroup>
+                <MenuGroup title="titulo2">
+                    <MenuItem name="3-4">menu2 sub5</MenuItem>
+                    <MenuItem name="3-5">menu2 sub6</MenuItem>
+                </MenuGroup>
+            </Submenu>
+            <MenuItem name="4">
+                <Icon type="ios-construct" />
+                Menu3
+            </MenuItem>
+        </Menu>
+      </div>
+      </Menu>
       <Icon slot="menu" type="android-apps"></Icon>
     </p-header>
     <div class="main">
@@ -37,20 +47,36 @@
         :trigger="setting.trigger"
         :arrow="setting.arrow"
       >
-        <CarouselItem> <div class="demo-carousel">1</div> </CarouselItem>
-        <CarouselItem> <div class="demo-carousel">2</div> </CarouselItem>
-        <CarouselItem> <div class="demo-carousel">3</div> </CarouselItem>
-        <CarouselItem> <div class="demo-carousel">4</div> </CarouselItem>
+        <CarouselItem>
+          <div class="demo-carousel">
+            <img slot="logo" src="./assets/b1.jpeg" alt="iview" />
+          </div>
+        </CarouselItem>
+        <CarouselItem>
+          <div class="demo-carousel">
+            <img slot="logo" src="./assets/b2.jpeg" alt="iview" />
+          </div>
+        </CarouselItem>
+        <CarouselItem>
+          <div class="demo-carousel">
+            <img slot="logo" src="./assets/b3.jpeg" alt="iview" />
+          </div>
+        </CarouselItem>
       </Carousel>
       <Card dis-hover shadow>
         <div class="main-con">
           <Card>
             <Row>
-              <h1>Teste Layout</h1>
-              <h3>---***---</h3>
+              <h1>h1</h1>
+              <h3>h3</h3>
             </Row>
           </Card>
-          <Card> </Card>
+          <Card>
+
+          </Card>
+            <Switch size="large" />1</Switch>
+            <Switch /></Switch>
+            <Switch size="small" /></Switch>          
         </div>
       </Card>
     </div>

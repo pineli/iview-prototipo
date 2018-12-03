@@ -1,10 +1,10 @@
-# test-project
+# Vuejs + iViewui
 
-> A Vue.js project
+> Protótipo de estudo
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 

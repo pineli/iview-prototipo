@@ -50,16 +50,7 @@
               <h3>---***---</h3>
             </Row>
           </Card>
-          <Card>
-            <button type="default" ghost>Default</button>
-            <button type="primary" ghost>Primary</button>
-            <button type="dashed" ghost>Dashed</button>
-            <button type="text" ghost>Text</button>
-            <button type="info" ghost>Info</button>
-            <button type="success" ghost>Success</button>
-            <button type="warning" ghost>Warning</button>
-            <button type="error" ghost>Error</button>
-          </Card>
+          <Card> </Card>
         </div>
       </Card>
     </div>
